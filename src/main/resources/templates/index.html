@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<header>
+    <h1><strong> House Service</strong></h1>
+    <img src="https://inde.io/i/posts/3831/ad08fbba7ae4c8ce35b9a81a04ea7eed.jpg">
+</header>
+
+<form method="post">
+    <input name="id">
+    <textarea name="price"></textarea>
+    <textarea name="district"></textarea>
+    <textarea name="area"></textarea>
+    <textarea name="rooms"></textarea>
+    <button>Add new House</button>
+</form>
+
+<div data-th-each="House:${Houses}"></div>
+<h3>[[${House.id}]]</h3>
+<p>[[${House.price}]]</p>
+<p>[[${House.district}]]</p>
+<p>[[${House.area}]]</p>
+<p>[[${House.rooms}]]</p>
+</body>
+</html>
